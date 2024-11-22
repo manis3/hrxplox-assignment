@@ -21,6 +21,9 @@ const config: Config = {
           DEFAULT: "var(--text-primary)",
           primary: "var(--primary)",
           charcoal: "var(--charcoal)",
+        },
+        rating: {
+          DEFAULT: "var(--rating-color)",
         }
       },
     },

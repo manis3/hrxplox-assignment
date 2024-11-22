@@ -34,6 +34,7 @@ html, body,#root,
     --text-secondary: var(--charcoal);
     --background: var(--ghost-white);
     --foreground: var(--milk-white);
+    --rating-color: #FACC15;
   }
   .dark{
     --primary: var(--dark);
