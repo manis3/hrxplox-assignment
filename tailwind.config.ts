@@ -1,14 +1,31 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
 
-export default {
-  content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
+const config: Config = {
+  darkMode: 'class',
+  content: [
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['DM Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        card: {
+          DEFAULT: "var(--card)",
+          banner: "var(--banner-color)"
+        },
+        text: {
+          DEFAULT: "var(--text-primary)",
+          primary: "var(--primary)",
+          charcoal: "var(--charcoal)",
+        }
       },
     },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;
