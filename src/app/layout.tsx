@@ -1,4 +1,5 @@
 'use client';
+import DashboardWrapper from './dashboard-wrapper';
 import './globals.css';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
@@ -12,7 +13,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <QueryClientProvider client={queryClient}>
-        <body>{children}</body>
+        <body>
+          <DashboardWrapper>
+
+            {children}
+          </DashboardWrapper>
+
+        </body>
       </QueryClientProvider>
     </html>
   );

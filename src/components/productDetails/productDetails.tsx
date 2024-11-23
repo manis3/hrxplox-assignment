@@ -37,7 +37,7 @@ export default function ProductDetails() {
               productCount={productCount}
               setProductCount={setProductCount}
             />
-            <ProductDescriptionAndReview title={productTitle} content={content} />
+            <ProductDescriptionAndReview isActiveTab={isActiveTab} setIsActiveTab={setIsActiveTab} title={productTitle} content={content} />
           </div>
         </div>
         <div className="lg:w-2/5 w-full hidden lg:flex">

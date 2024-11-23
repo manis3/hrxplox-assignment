@@ -37,7 +37,8 @@ html, body,#root,
     --rating-color: #FACC15;
     --light-gray: #e4e4e7;
     --grayscale-charcoal: #18181B;
-    --tw-prose-body: #3f3f46
+    --tw-prose-body: #3f3f46;
+    --breadcrumb: #6b7280;
   }
   .dark{
     --primary: var(--dark);

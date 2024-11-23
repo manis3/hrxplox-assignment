@@ -1,14 +1,11 @@
 // ProductDescriptionAndReview.tsx
-import React, { useState } from 'react';
+import React from 'react';
 import Tabs from '../ui/tabs/tabs';
 import { TabsData, TabType } from '@/consts/product-description-and-review';
-import useProductDetails from '../hooks/productDetails/useProductDetails';
 import ProductDescription from './productDescription';
 import ProductReview from './productReview';
 
-export default function ProductDescriptionAndReview({ title, content, className }: { title: string; content: string; className?: string }) {
-  const { isActiveTab, setIsActiveTab } = useProductDetails();
-
+export default function ProductDescriptionAndReview({ title, isActiveTab, setIsActiveTab, content, className }: { title: string; isActiveTab: string, setIsActiveTab: (type: TabType) => void, content: string; className?: string }) {
   return (
     <div className={className}>
       <div className="flex gap-4 items-center justify-start mb-5 border-b  border-border-lightGray">

@@ -1,3 +1,4 @@
+import Breadcrumb from "@/components/ui/breadcrumb/breadcrumb";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -23,6 +24,7 @@ const config: Config = {
           charcoal: "var(--charcoal)",
           grayScaleCharcoal: "var(--grayScale-charcoal)",
           proseBody: "var(--tw-prose-body)",
+          breadcrumb: "var(--breadcrumb)",
         },
         rating: {
           DEFAULT: "var(--rating-color)",

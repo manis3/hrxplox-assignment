@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Product() {
   return (
-    <div className="max-w-7xl m-auto">
+    <div className="max-w-[1220px] m-auto">
       <ProductDetail />
     </div>
   );

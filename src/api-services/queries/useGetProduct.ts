@@ -11,8 +11,10 @@ export const useGetProduct = ({ slug, page = 1, pageSize = 10 }: { slug: string;
       const result = await graphqlClient.request(GET_PRODUCT_OF_PRODUCT, {
         slug,
       });
+
       return result;
     },
+    enabled: !!slug
   });
 
   return {
