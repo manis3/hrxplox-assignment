@@ -3,9 +3,6 @@ import React from 'react';
 import CategoryCardWithImageZoomIn from './categoryCardWithImageZoomIn';
 import ProductSummary from './productSummary';
 import ProductDescriptionAndReview from './productDescriptionAndReview';
-import { useGetCollections } from '@/api-services/queries/useGetCollections';
-import { useGetCollection } from '@/api-services/queries/useGetCollection';
-import { useGetProduct } from '@/api-services/queries/useGetProduct';
 import useProductDetails from '../hooks/productDetails/useProductDetails';
 
 export default function ProductDetails() {
@@ -28,7 +25,7 @@ export default function ProductDetails() {
       <div className="flex flex-col lg:flex-row gap-10  xl:gap-14">
         <div className="lg:w-3/5 w-full">
           <div className="space-y-10">
-            <CategoryCardWithImageZoomIn />
+            <CategoryCardWithImageZoomIn imageSrc={imageSrc} />
             <ProductSummary
               className="flex flex-col lg:hidden"
               productTitle={productTitle}

@@ -16,7 +16,6 @@ export const useAppStore = create<StoreState>()(
       name: 'product-storage',
       onRehydrateStorage: (state) => {
         if (state?.productCount) {
-          console.log('Rehydrated products:', state.productCount);
         }
       },
       partialize: (state) => Object.fromEntries(Object.entries(state).filter(([key]) => !['actions'].includes(key))),

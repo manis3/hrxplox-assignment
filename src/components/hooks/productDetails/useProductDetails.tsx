@@ -7,7 +7,6 @@ import { useState } from 'react';
 export default function useProductDetails() {
   const { slug } = useParams();
   const { product } = useGetProduct({ slug: String(slug) });
-  console.log(product);
   const [isActiveTab, _setIsActiveTab] = useState<string>(TabType.DESCRIPTION);
   const [isInStock, setIsInStock] = useState<boolean>(true);
   const productCount = useAppStore((store) => store.productCount);

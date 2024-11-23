@@ -3,7 +3,6 @@ import React from 'react';
 import Rating from '../ui/rating/ratingStar';
 import FeatureList from '../ui/featureList/featureList';
 import Button from '../ui/button/ButtonWithLoadingState';
-import useProductDetails from '../hooks/productDetails/useProductDetails';
 import { PaymentIcon, ProfileIcon, ShippingIcon, TagIcon } from '@/assets/svgs';
 import { IProductSummary } from '@/types/product-detail.type';
 
@@ -18,7 +17,6 @@ export default function ProductSummary({
   setProductCount,
   isInStock,
 }: IProductSummary) {
-  console.log(productCount);
   return (
     <div className={cn(className)}>
       <h1 className="text-2xl sm:text-3xl font-bold">{productTitle}</h1>
