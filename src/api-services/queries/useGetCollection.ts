@@ -19,7 +19,7 @@ export const useGetCollection = ({ slug, page = 1, pageSize = 10 }: { slug: stri
     //@ts-expect-error
     productList: data?.search?.items,
     error,
-    isCollectionFetching: isPending,
+    isProductListFetching: isPending,
     isError,
   };
 };

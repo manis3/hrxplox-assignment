@@ -21,7 +21,7 @@ export const useGetProduct = ({ slug, page = 1, pageSize = 10 }: { slug: string;
     //@ts-expect-error
     product: data?.product,
     error,
-    isCollectionFetching: isPending,
+    isProductBeingFetched: isPending,
     isError,
   };
 };

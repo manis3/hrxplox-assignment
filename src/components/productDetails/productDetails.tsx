@@ -4,9 +4,11 @@ import CategoryCardWithImageZoomIn from './categoryCardWithImageZoomIn';
 import ProductSummary from './productSummary';
 import ProductDescriptionAndReview from './productDescriptionAndReview';
 import useProductDetails from '../hooks/productDetails/useProductDetails';
+import Loader from '../ui/Loader/Loader';
 
 export default function ProductDetails() {
   const {
+    isProductBeingFetched,
     isActiveTab,
     setIsActiveTab,
     isInStock,
@@ -20,6 +22,11 @@ export default function ProductDetails() {
     stockCount,
     price,
   } = useProductDetails();
+
+  if (isProductBeingFetched) {
+    return <Loader wrapperClassName="bg-primary" />
+  }
+
   return (
     <div className="w-full h-full">
       <div className="flex flex-col lg:flex-row gap-10  xl:gap-14">
