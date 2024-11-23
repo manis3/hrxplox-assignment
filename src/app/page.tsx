@@ -1,7 +1,7 @@
 import Banner from '@/components/banner/banner';
 import CategoriesCard from '@/components/categories/categoriesCard';
 import CategoryCard from '@/components/categories/category/categoryCard';
-import CategoryCardWithImageZoomIn from '@/components/categories/category/categoryCardWithImageZoomIn';
+import CategoryCardWithImageZoomIn from '@/components/productDetails/categoryCardWithImageZoomIn';
 import ProductDetails from '@/components/productDetails/productDetails';
 export default function Home() {
   return (

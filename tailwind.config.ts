@@ -21,9 +21,14 @@ const config: Config = {
           DEFAULT: "var(--text-primary)",
           primary: "var(--primary)",
           charcoal: "var(--charcoal)",
+          grayScaleCharcoal: "var(--grayScale-charcoal)",
+          proseBody: "var(--tw-prose-body)",
         },
         rating: {
           DEFAULT: "var(--rating-color)",
+        },
+        border: {
+          lightGray: "var(light-gray)"
         }
       },
     },

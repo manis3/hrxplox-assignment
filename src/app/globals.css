@@ -35,12 +35,16 @@ html, body,#root,
     --background: var(--ghost-white);
     --foreground: var(--milk-white);
     --rating-color: #FACC15;
+    --light-gray: #e4e4e7;
+    --grayscale-charcoal: #18181B;
+    --tw-prose-body: #3f3f46
   }
   .dark{
     --primary: var(--dark);
     --milk-white: #1e2834;
     --text-primary: var(--white);
     --charcoal: var(--milk-white);
+    --grayscale-charcoal: var(--milk-white);
     
   }
 }

@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import CategoriesCard from '../categoriesCard';
+import CategoriesCard from '../categories/categoriesCard';
 import { cn } from '@/utils/cn';
 import Button from '@/components/ui/button/ButtonWithLoadingState';
 import useCategoryImage from '@/components/hooks/category/useCategoryImage';
@@ -11,7 +11,7 @@ export default function CategoryCardWithImageZoomIn({ className }: { className?:
   const { isImageZoomIn, setIsImageZoomIn } = useCategoryImage();
 
   return (
-    <div className="relative flex place-items-center  overflow-hidden aspect-square object-cover rounded-md ">
+    <div className="relative flex place-items-center overflow-hidden aspect-square object-cover rounded-md ">
       <CategoriesCard
         className={cn('transition-transform duration-300 w-full h-full', {
           'scale-125': isImageZoomIn,
