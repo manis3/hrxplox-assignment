@@ -1,6 +1,6 @@
 import React, { ComponentProps } from 'react';
 
-export default function ShrinkIcon(props: ComponentProps<'svg'>) {
+export function ShrinkIcon(props: ComponentProps<'svg'>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
