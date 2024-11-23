@@ -9,5 +9,5 @@ export * from './CollectionsIcon';
 export * from './CartIcon';
 export * from './DeliveryIcon';
 export * from './GiftIcon';
-export * from './SecurityIcon'
-export * from './SecurePaymentIcon'
+export * from './SecurityIcon';
+export * from './SecurePaymentIcon';
