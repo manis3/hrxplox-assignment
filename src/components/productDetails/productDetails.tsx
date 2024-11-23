@@ -24,7 +24,7 @@ export default function ProductDetails() {
   } = useProductDetails();
 
   if (isProductBeingFetched) {
-    return <Loader wrapperClassName="bg-primary" />
+    return <Loader wrapperClassName="bg-primary" />;
   }
 
   return (

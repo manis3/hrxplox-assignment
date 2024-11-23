@@ -23,17 +23,18 @@ export default function ProductList() {
       <Breadcrumb slug={String(slug)} link={`/products/${slug}`} />
       <div className="flex gap-4">
         <div className="w-1/6" />
-        {
-          isProductListFetching ? <Loader wrapperClassName='bg-primary' /> :
-            <div className="w-5/6 grid gap-y-10 gap-x-6 grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-              {productList &&
-                Object.entries(productList).map(([key, product]: [string, any]) => (
-                  <Link key={product.slug} href={`/product/${product.slug}`}>
-                    <CategoryCard price={product?.priceWithTax?.max} imageSrc={product?.productAsset?.preview} productName={product?.productName} />
-                  </Link>
-                ))}
-            </div>
-        }
+        {isProductListFetching ? (
+          <Loader wrapperClassName="bg-primary" />
+        ) : (
+          <div className="w-5/6 grid gap-y-10 gap-x-6 grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+            {productList &&
+              Object.entries(productList).map(([key, product]: [string, any]) => (
+                <Link key={product.slug} href={`/product/${product.slug}`}>
+                  <CategoryCard price={product?.priceWithTax?.max} imageSrc={product?.productAsset?.preview} productName={product?.productName} />
+                </Link>
+              ))}
+          </div>
+        )}
       </div>
     </div>
   );
