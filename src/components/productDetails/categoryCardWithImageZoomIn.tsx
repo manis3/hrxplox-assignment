@@ -6,7 +6,7 @@ import Button from '@/components/ui/button/ButtonWithLoadingState';
 import useCategoryImage from '@/components/hooks/category/useCategoryImage';
 import { ExpandSvg, ShrinkIcon } from '@/assets/svgs';
 
-export default function CategoryCardWithImageZoomIn({ imageSrc, className }: { imageSrc: string, className?: string }) {
+export default function CategoryCardWithImageZoomIn({ imageSrc, className }: { imageSrc: string; className?: string }) {
   const { isImageZoomIn, setIsImageZoomIn } = useCategoryImage();
 
   return (
