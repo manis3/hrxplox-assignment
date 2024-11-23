@@ -3,6 +3,7 @@ import Banner from '@/components/banner/banner';
 import CategoriesCard from '@/components/categories/categoriesCard';
 import Link from 'next/link';
 import React from 'react';
+import OurServices from './ourServices';
 
 export default function Collections() {
   const { collections } = useGetCollections();
@@ -17,6 +18,7 @@ export default function Collections() {
             </Link>
           ))}
       </div>
+      <OurServices />
     </div>
   );
 }

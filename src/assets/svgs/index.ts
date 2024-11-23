@@ -7,3 +7,7 @@ export * from './TickIcon';
 export * from './ProfileIcon';
 export * from './CollectionsIcon';
 export * from './CartIcon';
+export * from './DeliveryIcon';
+export * from './GiftIcon';
+export * from './SecurityIcon'
+export * from './SecurePaymentIcon'
