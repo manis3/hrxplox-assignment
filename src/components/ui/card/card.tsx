@@ -5,7 +5,7 @@ import { cn } from '@/utils/cn';
 const cardVariants = cva('w-full', {
   variants: {
     padding: {
-      '0px': "p-0",
+      '0px': 'p-0',
       '18px': 'p-[18px]',
       '16px': 'p-4',
       '48px': 'p-12',

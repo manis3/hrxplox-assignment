@@ -1,2 +1,2 @@
 export * from './ExpandSvg';
-export * from './ShrinkIcon'
+export * from './ShrinkIcon';
