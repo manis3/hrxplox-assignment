@@ -7,15 +7,23 @@ import useProductDetails from '../hooks/productDetails/useProductDetails';
 import { PaymentIcon, ProfileIcon, ShippingIcon, TagIcon } from '@/assets/svgs';
 import { IProductSummary } from '@/types/product-detail.type';
 
-export default function ProductSummary({ title, productTitle, stockCount, price, className, isInStockTitle, productCount, setProductCount, isInStock }: IProductSummary) {
+export default function ProductSummary({
+  title,
+  productTitle,
+  stockCount,
+  price,
+  className,
+  isInStockTitle,
+  productCount,
+  setProductCount,
+  isInStock,
+}: IProductSummary) {
   console.log(productCount);
   return (
     <div className={cn(className)}>
       <h1 className="text-2xl sm:text-3xl font-bold">{productTitle}</h1>
       <div className="relative !flex !flex-row items-center gap-2 mt-3 ">
-        <p>
-          {stockCount}
-        </p>
+        <p>{stockCount}</p>
         <span
           className={cn('py-1 px-2  rounded-md font-medium', {
             'bg-green-100 text-green-900': isInStock,
@@ -26,8 +34,7 @@ export default function ProductSummary({ title, productTitle, stockCount, price,
         </span>
       </div>
       <div className="flex items-center justify-start mt-5 gap-3">
-        <Rating rating={4} size={'lg'} />
-        5 reviews
+        <Rating rating={4} size={'lg'} />5 reviews
       </div>
 
       <div className="mt-8 text-3xl font-bold text-text-proseBody">

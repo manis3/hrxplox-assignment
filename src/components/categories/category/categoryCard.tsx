@@ -3,7 +3,7 @@ import CategoriesCard from '../categoriesCard';
 import { Card } from '@/components/ui/card';
 import Rating from '@/components/ui/rating/ratingStar';
 
-export default function CategoryCard({ imageSrc, price, productName }: { imageSrc?: string, price?: number, productName?: string }) {
+export default function CategoryCard({ imageSrc, price, productName }: { imageSrc?: string; price?: number; productName?: string }) {
   return (
     <Card className="rounded-md transition-all group hover:shadow-lg  pb-2">
       <CategoriesCard className="hover:scale-110" imageSrc={imageSrc} />

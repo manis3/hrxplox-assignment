@@ -2,7 +2,7 @@ import React from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar/Avatar';
 import Rating from '../ui/rating/ratingStar';
 
-export default function ProductReview({ userName, date }: { userName: string, date: string }) {
+export default function ProductReview({ userName, date }: { userName: string; date: string }) {
   return (
     <div>
       <div className="flex gap-10">
