@@ -9,7 +9,7 @@ import React from 'react';
 
 export default function ProductList() {
   const { slug } = useParams();
-  const setProductsSlug = useAppStore(Store => Store.actions.setProductsSlug)
+  const setProductsSlug = useAppStore((Store) => Store.actions.setProductsSlug);
 
   if (slug) {
     setProductsSlug(String(slug));
@@ -20,9 +20,8 @@ export default function ProductList() {
     <div>
       <h3 className="text-3xl sm:text-5xl font-medium tracking-tight text-gray-900 my-8">{slug}</h3>
       <Breadcrumb slug={String(slug)} link={`/products/${slug}`} />
-      <div className='flex gap-4'>
-
-        <div className='w-1/6' />
+      <div className="flex gap-4">
+        <div className="w-1/6" />
         <div className="w-5/6 grid gap-y-10 gap-x-6 grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {productList &&
             Object.entries(productList).map(([key, product]: [string, any]) => (

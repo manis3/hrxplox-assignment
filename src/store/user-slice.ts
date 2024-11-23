@@ -3,7 +3,7 @@ import { StateCreator } from 'zustand';
 
 const initialState: IUserProductInitialState = {
   productCount: 0,
-  productsSlug: ''
+  productsSlug: '',
 };
 
 export const createUserProductSlice: StateCreator<IUserProductSlice> = (set, get) => ({
@@ -14,6 +14,6 @@ export const createUserProductSlice: StateCreator<IUserProductSlice> = (set, get
     },
     setProductsSlug: (_slug) => {
       set({ productsSlug: _slug });
-    }
+    },
   },
 });

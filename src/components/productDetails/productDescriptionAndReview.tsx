@@ -5,7 +5,19 @@ import { TabsData, TabType } from '@/consts/product-description-and-review';
 import ProductDescription from './productDescription';
 import ProductReview from './productReview';
 
-export default function ProductDescriptionAndReview({ title, isActiveTab, setIsActiveTab, content, className }: { title: string; isActiveTab: string, setIsActiveTab: (type: TabType) => void, content: string; className?: string }) {
+export default function ProductDescriptionAndReview({
+  title,
+  isActiveTab,
+  setIsActiveTab,
+  content,
+  className,
+}: {
+  title: string;
+  isActiveTab: string;
+  setIsActiveTab: (type: TabType) => void;
+  content: string;
+  className?: string;
+}) {
   return (
     <div className={className}>
       <div className="flex gap-4 items-center justify-start mb-5 border-b  border-border-lightGray">

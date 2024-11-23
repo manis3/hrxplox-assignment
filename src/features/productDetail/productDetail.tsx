@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import React from 'react';
 
 export default function ProductDetail() {
-  const productsSlug = useAppStore(store => store.productsSlug)
+  const productsSlug = useAppStore((store) => store.productsSlug);
   return (
     <div className="space-y-10 my-10 ">
       <Breadcrumb slug={productsSlug} link={`/products/${productsSlug}`} />

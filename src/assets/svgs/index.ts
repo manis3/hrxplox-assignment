@@ -5,5 +5,5 @@ export * from './TagIcon';
 export * from './ShippingIcon';
 export * from './TickIcon';
 export * from './ProfileIcon';
-export * from "./CollectionsIcon";
-export * from './CartIcon'
+export * from './CollectionsIcon';
+export * from './CartIcon';

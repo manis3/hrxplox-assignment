@@ -14,7 +14,7 @@ export const useGetProduct = ({ slug, page = 1, pageSize = 10 }: { slug: string;
 
       return result;
     },
-    enabled: !!slug
+    enabled: !!slug,
   });
 
   return {

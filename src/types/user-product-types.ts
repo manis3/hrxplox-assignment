@@ -5,7 +5,7 @@ export interface IUserProductSliceActions {
 
 export interface IUserProductInitialState {
   productCount: number;
-  productsSlug: string
+  productsSlug: string;
 }
 
 export interface IUserProductSlice extends IUserProductInitialState {
