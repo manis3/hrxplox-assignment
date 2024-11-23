@@ -39,6 +39,7 @@ html, body,#root,
     --grayscale-charcoal: #18181B;
     --tw-prose-body: #3f3f46;
     --breadcrumb: #6b7280;
+    --footer-bg: #F9FAFB;
   }
   .dark{
     --primary: var(--dark);

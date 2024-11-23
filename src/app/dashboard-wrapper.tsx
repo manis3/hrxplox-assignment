@@ -1,3 +1,4 @@
+import Footer from '@/components/footer/footer';
 import Navbar from '@/components/navbar/navBar';
 import { usePathname } from 'next/navigation';
 import React from 'react';
@@ -9,6 +10,7 @@ export default function DashboardWrapper({ children }: { children: React.ReactNo
     <main>
       <Navbar pathname={pathname} />
       {children}
+      <Footer />
     </main>
   );
 }

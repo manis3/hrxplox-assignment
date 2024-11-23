@@ -14,6 +14,7 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        footer: 'var(--footer)',
         card: {
           DEFAULT: "var(--card)",
           banner: "var(--banner-color)"
