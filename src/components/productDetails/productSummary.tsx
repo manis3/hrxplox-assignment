@@ -5,15 +5,17 @@ import FeatureList from '../ui/featureList/featureList';
 import Button from '../ui/button/ButtonWithLoadingState';
 import useProductDetails from '../hooks/productDetails/useProductDetails';
 import { PaymentIcon, ProfileIcon, ShippingIcon, TagIcon } from '@/assets/svgs';
+import { IProductSummary } from '@/types/product-detail.type';
 
-export default function ProductSummary({ className }: { className?: string }) {
-  const { productCount, setProductCount, isInStock, title, isInStockTitle } = useProductDetails();
+export default function ProductSummary({ title, productTitle, stockCount, price, className, isInStockTitle, productCount, setProductCount, isInStock }: IProductSummary) {
   console.log(productCount);
   return (
     <div className={cn(className)}>
-      <h1 className="text-2xl sm:text-3xl font-bold">Hyaluronic Acid Serum</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold">{productTitle}</h1>
       <div className="relative !flex !flex-row items-center gap-2 mt-3 ">
-        <p>No of stock</p>
+        <p>
+          {stockCount}
+        </p>
         <span
           className={cn('py-1 px-2  rounded-md font-medium', {
             'bg-green-100 text-green-900': isInStock,
@@ -25,11 +27,11 @@ export default function ProductSummary({ className }: { className?: string }) {
       </div>
       <div className="flex items-center justify-start mt-5 gap-3">
         <Rating rating={4} size={'lg'} />
-        No of Rating
+        5 reviews
       </div>
 
       <div className="mt-8 text-3xl font-bold text-text-proseBody">
-        $109.95
+        {`$${price}.00`}
         <FeatureList icon={<TagIcon />} content="Save 10% on your first order" />
       </div>
       <div className="mt-10">

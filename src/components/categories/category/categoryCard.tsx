@@ -3,13 +3,13 @@ import CategoriesCard from '../categoriesCard';
 import { Card } from '@/components/ui/card';
 import Rating from '@/components/ui/rating/ratingStar';
 
-export default function CategoryCard() {
+export default function CategoryCard({ imageSrc, price, productName }: { imageSrc?: string, price?: number, productName?: string }) {
   return (
-    <Card className="!py-0 !px-0 shadow-lg space-x-2 space-y-3">
-      <CategoriesCard className="hover:scale-110" />
+    <Card className="rounded-md transition-all group hover:shadow-lg  pb-2">
+      <CategoriesCard className="hover:scale-110" imageSrc={imageSrc} />
       <div className="text-xs font-bold text-text-charcoal sm:text-sm md:text-base ml-3 mt-3 space-y-3">
-        <p>$695.00</p>
-        <p>John Hardy Women Legends Naga Gold & Silver Dragon Station Chain Bracelet</p>
+        <p>{`$${price}.00`}</p>
+        <p>{productName}</p>
         <Rating rating={3} size={'md'} className="text-rating" />
       </div>
     </Card>

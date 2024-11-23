@@ -16,7 +16,8 @@ export const useGetCollection = ({ slug, page = 1, pageSize = 10 }: { slug: stri
   });
 
   return {
-    collection: data,
+    //@ts-expect-error
+    productList: data?.search?.items,
     error,
     isCollectionFetching: isPending,
     isError,
