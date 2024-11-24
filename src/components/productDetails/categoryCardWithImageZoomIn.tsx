@@ -10,7 +10,7 @@ import Image from 'next/image';
 export default function CategoryCardWithImageZoomIn({
   imageSrc,
   previewUrls,
-  className
+  className,
 }: {
   imageSrc: string;
   previewUrls: string[];
@@ -20,11 +20,17 @@ export default function CategoryCardWithImageZoomIn({
 
   return (
     <div className={cn('relative flex overflow-hidden aspect-square object-cover rounded-md gap-6', className)}>
-      <div className='w-2/6 flex flex-col gap-4 items-start justify-start '>
+      <div className="w-2/6 flex flex-col gap-4 items-start justify-start ">
         {previewUrls &&
           previewUrls.map((url, index) => (
             <div key={index} onClick={() => setPreviewImage(url)}>
-              <Image src={url} width={150} height={150} alt={`Preview ${index + 1}`} className='object-cover aspect-square focus-visible:ring-1 cursor-pointer active:shadow-sm transition-transform duration-300 transform hover:scale-110' />
+              <Image
+                src={url}
+                width={150}
+                height={150}
+                alt={`Preview ${index + 1}`}
+                className="object-cover aspect-square focus-visible:ring-1 cursor-pointer active:shadow-sm transition-transform duration-300 transform hover:scale-110"
+              />
             </div>
           ))}
       </div>
@@ -37,10 +43,7 @@ export default function CategoryCardWithImageZoomIn({
         imageSrc={previewImage}
       />
 
-      <Button
-        onClick={setIsImageZoomIn}
-        className="absolute bottom-4 right-4 bg-foreground p-2 h-10 w-10 rounded-lg shadow-md bg-opacity-50"
-      >
+      <Button onClick={setIsImageZoomIn} className="absolute bottom-4 right-4 bg-foreground p-2 h-10 w-10 rounded-lg shadow-md bg-opacity-50">
         {isImageZoomIn ? <ShrinkIcon /> : <ExpandSvg />}
       </Button>
     </div>

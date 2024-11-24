@@ -21,7 +21,7 @@ export default function ProductDetails() {
     imageSrc,
     stockCount,
     price,
-    previewUrls
+    previewUrls,
   } = useProductDetails();
 
   if (isProductBeingFetched) {

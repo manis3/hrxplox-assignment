@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 
 export default function useCategoryImage({ imageSrc }: { imageSrc: string }) {
-  const [previewImage, _setPreviewImage] = useState<string>(imageSrc)
+  const [previewImage, _setPreviewImage] = useState<string>(imageSrc);
   const [isImageZoomIn, _setIsImageZoomIn] = useState<boolean>(true);
 
   const setPreviewImage = (url: string) => {
-    _setPreviewImage(url)
-  }
+    _setPreviewImage(url);
+  };
   const setIsImageZoomIn = () => {
     _setIsImageZoomIn((prev) => !prev);
   };
@@ -15,6 +15,6 @@ export default function useCategoryImage({ imageSrc }: { imageSrc: string }) {
     isImageZoomIn,
     setIsImageZoomIn,
     setPreviewImage,
-    previewImage
+    previewImage,
   };
 }

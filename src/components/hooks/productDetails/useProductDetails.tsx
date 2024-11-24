@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 interface IAssets {
   id: string;
-  preview: string
+  preview: string;
 }
 export default function useProductDetails() {
   const { slug } = useParams();
@@ -18,7 +18,7 @@ export default function useProductDetails() {
 
   const title = productCount === 0 ? 'Add to cart' : `${productCount} in cart`;
 
-  console.log(product)
+  console.log(product);
 
   const productTitle = product?.name;
   const content = product?.description;
