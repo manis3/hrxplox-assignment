@@ -1,8 +1,6 @@
-import Image from 'next/image';
 import React from 'react';
 import SearchBar from '../ui/searchBar/searchBar';
 import { CartIcon, CollectionsIcon } from '@/assets/svgs';
-import Link from 'next/link';
 import Slogan from '../ui/logo/logo';
 
 export default function Navbar({ pathname }: { pathname: string }) {
