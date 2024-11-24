@@ -21,6 +21,7 @@ export default function ProductDetails() {
     imageSrc,
     stockCount,
     price,
+    previewUrls
   } = useProductDetails();
 
   if (isProductBeingFetched) {
@@ -32,7 +33,7 @@ export default function ProductDetails() {
       <div className="flex flex-col lg:flex-row gap-10  xl:gap-14">
         <div className="lg:w-3/5 w-full">
           <div className="space-y-10">
-            <CategoryCardWithImageZoomIn imageSrc={imageSrc} />
+            <CategoryCardWithImageZoomIn imageSrc={imageSrc} previewUrls={previewUrls} />
             <ProductSummary
               className="flex flex-col lg:hidden"
               productTitle={productTitle}

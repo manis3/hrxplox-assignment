@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Products() {
   return (
-    <div className="max-w-[1220px] m-auto overflow-hidden">
+    <div className="max-w-[1300px] m-auto overflow-hidden">
       <ProductList />
     </div>
   );

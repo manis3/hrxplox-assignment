@@ -15,14 +15,17 @@ export default function Collections() {
       {isCollectionsFetching ? (
         <Loader wrapperClassName="bg-primary" />
       ) : (
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
-          {collections &&
-            Object.entries(collections).map(([key, collection]: [string, any]) => (
-              <Link key={key} href={`products/${collection.slug}`}>
-                <CategoriesCard badgeTitle={collection?.name} show className="hover:scale-110" imageSrc={collection?.featuredAsset?.preview} />
-              </Link>
-            ))}
-        </div>
+        <>
+          <h1 className='text-2xl text-text-proseBody sm:text-4xl font-normal mb-5'>Shop by Category</h1>
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
+            {collections &&
+              Object.entries(collections).map(([key, collection]: [string, any]) => (
+                <Link key={key} href={`products/${collection.slug}`}>
+                  <CategoriesCard badgeTitle={collection?.name} show className="hover:scale-110" imageSrc={collection?.featuredAsset?.preview} />
+                </Link>
+              ))}
+          </div>
+        </>
       )}
       <OurServices />
     </div>

@@ -12,6 +12,7 @@ export default function CategoriesCard({
   imageSrc = '/image.jpg',
   className,
   wrapperCardClassName,
+  onClick,
 }: {
   badgeTitle?: string;
   show?: boolean;
@@ -20,9 +21,10 @@ export default function CategoriesCard({
   imageSrc?: string;
   className?: string;
   wrapperCardClassName?: string;
+  onClick?: () => void;
 }) {
   return (
-    <Card className={cn('relative overflow-hidden aspect-square rounded-md !p-0', wrapperCardClassName)} padding={'0px'}>
+    <Card className={cn('relative overflow-hidden aspect-square rounded-md !p-0', wrapperCardClassName)} padding={'0px'} onClick={onClick}>
       {show && <Badge>{badgeTitle}</Badge>}
       <Image
         src={imageSrc}
