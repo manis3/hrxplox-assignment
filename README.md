@@ -37,30 +37,16 @@ List the key features of your project.
 ## Preview
   ### Home page
 ![HomePage](https://github.com/manis3/World_Tech_Assignment/blob/master/Screenshots/HomePage.png)
+![HomePage](https://github.com/manis3/hrxplox-assignment/blob/master/screenshots/HomePage2.png)
+![HomePage](https://github.com/manis3/hrxplox-assignment/blob/master/screenshots/HomePage3.png)
 
-  ### Login
-![Login](https://github.com/manis3/World_Tech_Assignment/blob/master/Screenshots/Login.png)
 
-  ### Signup
-![Signup](https://github.com/manis3/World_Tech_Assignment/blob/master/Screenshots/signup.png)
 
-  ### Add Blog
-![Add_Blog](https://github.com/manis3/World_Tech_Assignment/blob/master/Screenshots/Add_Blog.png)
+  ### Products List
+![Product list](https://github.com/manis3/hrxplox-assignment/blob/master/screenshots/productList.png)
 
-  ### Update Blog
-![Update_Blog](https://github.com/manis3/World_Tech_Assignment/blob/master/Screenshots/Update_Blog.png))
+  ### Product Details
+![productDetail](https://github.com/manis3/hrxplox-assignment/blob/master/screenshots/Detail1.png)
+![productDetail](https://github.com/manis3/hrxplox-assignment/blob/master/screenshots/Detail2.png)
+![productDetail](https://github.com/manis3/hrxplox-assignment/blob/master/screenshots/Detail3.png)
 
-  ### Category page
-![Category](https://github.com/manis3/World_Tech_Assignment/blob/master/Screenshots/Category_page.png)
-
-  ### Tag page
-![Tag](https://github.com/manis3/World_Tech_Assignment/blob/master/Screenshots/Tag_Page.png)
-
-  ### Forget_Password
-  ![Forget_Password](https://github.com/manis3/World_Tech_Assignment/blob/master/Screenshots/Forget_password.png)
-
-  ### Request OTP
-  ![Request_OTP](https://github.com/manis3/World_Tech_Assignment/blob/master/Screenshots/Request_otp.png)
-
-  ### Reset_Password
-  ![Reset_Password](https://github.com/manis3/World_Tech_Assignment/blob/master/Screenshots/Reset_Password.png)
