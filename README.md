@@ -36,7 +36,7 @@ List the key features of your project.
 ```
 ## Preview
   ### Home page
-![HomePage](https://github.com/manis3/World_Tech_Assignment/blob/master/Screenshots/HomePage.png)
+![HomePage](https://github.com/manis3/hrxplox-assignment/blob/master/screenshots/Homepage-1.png)
 ![HomePage](https://github.com/manis3/hrxplox-assignment/blob/master/screenshots/HomePage2.png)
 ![HomePage](https://github.com/manis3/hrxplox-assignment/blob/master/screenshots/HomePage3.png)
 
