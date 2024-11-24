@@ -18,7 +18,6 @@ export default function useProductDetails() {
 
   const title = productCount === 0 ? 'Add to cart' : `${productCount} in cart`;
 
-
   const productTitle = product?.name;
   const content = product?.description;
   const imageSrc = product?.featuredAsset?.preview;
